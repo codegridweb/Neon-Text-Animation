@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Neon Text</title>
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400" rel="stylesheet">
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- jquery cdn -->
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+      <!-- plugin -->
+      <script src="jquery.novacancy.min.js"></script>
+</head>
+<body>
+
+      <script type="text/javascript">
+            $(document).ready(function() {
+      			$('#neonthis').novacancy({
+      				'reblinkProbability': 0.4,
+       'blinkMin': 0.1,
+       'blinkMax': 0.4,
+       'loopMin': 1,
+       'loopMax': 2,
+       'color': 'red',
+       'glow': ['0 0 80px red', '0 0 30px red', '0 0 6px red'],
+       'off': 2,
+       'blink': 0,
+       'autoOn': true
+      			});
+      		});
+	</script>
+
+      <div class="neon-text">
+	    <p id="neonthis">&nbsp;&nbsp;who<br>
+                made<br>
+                &nbsp;the<br>
+                &nbsp;&nbsp;rules</p>
+	</div>
+</body>
+</html>
